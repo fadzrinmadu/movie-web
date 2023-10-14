@@ -58,7 +58,7 @@ const MovieList = () => {
                   duration={movie.duration}
                   parentalGuidance={movie.parentalGuidance}
                   producers={movie.producers}
-                  onActionClick={() => alert(`Clicked on ${movie.title}`)}
+                  onActionClick={() => {}}
                 />
               ))}
         </div>
