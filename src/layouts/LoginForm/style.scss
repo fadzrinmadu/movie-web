@@ -1,0 +1,38 @@
+@import '../../assets/styles/colors.scss';
+
+.login-form {
+  max-width: 350px;
+  margin: 80px auto;
+  padding: 20px;
+  background: $background-color;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px $box-shadow-color;
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      background: $primary-color;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: $primary-hover-color;
+      }
+    }
+  }
+}

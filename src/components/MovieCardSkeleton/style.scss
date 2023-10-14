@@ -1,0 +1,79 @@
+@import '../../assets/styles/colors.scss';
+
+.movie-card-skeleton {
+  display: flex;
+  flex-direction: column;
+  border: $card-border;
+  border-radius: $card-border-radius;
+  background-color: #f2f2f2; 
+  box-shadow: $box-shadow;
+
+  &__image {
+    width: 100%;
+    height: 340px;
+    background-color: #ccc;
+  }
+
+  &__content {
+    padding: 10px;
+    font-size: 14px;
+    text-align: justify;
+
+    &__title {
+      width: 70%;
+      height: 20px;
+      background-color: #ccc;
+      margin-bottom: 8px;
+    }
+
+    &__details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 8px 0;
+
+      &__detail {
+        width: 30%;
+        height: 16px;
+        background-color: #ccc;
+      }
+    }
+
+    &__summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 8px 0;
+
+      &__rating {
+        width: 20%;
+        height: 16px;
+        background-color: #ccc;
+      }
+    }
+
+    &__description {
+      height: 80px;
+      background-color: #ccc;
+      margin: 8px 0;
+    }
+
+    &__genres {
+      height: 20px;
+      background-color: #ccc; 
+    }
+  }
+
+  &__action {
+    display: flex;
+    justify-content: flex-end;
+
+    &__action-button {
+      width: 100px;
+      height: 40px;
+      background-color: #ccc;
+      margin-top: 12px;
+      border-radius: 5px;
+    }
+  }
+}

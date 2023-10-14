@@ -1,0 +1,74 @@
+@import '../../assets/styles/colors.scss';
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  border: $card-border;
+  border-radius: $card-border-radius;
+  overflow: hidden;
+  background-color: $card-bg;
+  box-shadow: $box-shadow;
+
+  &__image {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    object-position: center top;
+  }
+  
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px;
+  }
+
+  &__content {
+    font-size: 14px;
+    text-align: justify;
+  }
+  
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0;
+  }
+  
+  &__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+
+  &__description {
+    font-size: 0.9rem;
+    margin: 8px 0;
+  }
+
+  &__rating {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  
+  &__action {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__action-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}

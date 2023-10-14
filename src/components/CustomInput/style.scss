@@ -1,0 +1,25 @@
+@import '../../assets/styles/colors.scss';
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: $black-color;
+}
+
+input {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 3px $box-shadow-color;
+  }
+}
